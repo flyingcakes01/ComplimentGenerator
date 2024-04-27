@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Random Compliment Generator</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #f0f0f0;
+        color: #333;
+    }
+    .compliment {
+        font-size: 24px;
+        padding: 20px;
+        border: 1px solid #ddd;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+</style>
+</head>
+<body>
+<div class="compliment" id="complimentContainer">Welcome!</div>
+<script>
+    const compliments = [
+        "You're an awesome friend.",
+        "You're a gift to those around you.",
+        "You're a smart cookie.",
+        "You look great today.",
+        "You've got all the right moves!",
+        "Your kindness is a balm to everyone around you."
+    ];
+
+    function showRandomCompliment() {
+        const randomIndex = Math.floor(Math.random() * compliments.length);
+        document.getElementById('complimentContainer').innerText = compliments[randomIndex];
+    }
+
+    setInterval(showRandomCompliment, 1000);
+</script>
+</body>
+</html>
