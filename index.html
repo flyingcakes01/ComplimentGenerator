@@ -15,12 +15,15 @@
         color: #333;
     }
     .compliment {
-        font-size: 24px;
+        font-size: calc(24px + 1vw); /* Adjust font size dynamically */
         padding: 20px;
         border: 1px solid #ddd;
         background-color: #fff;
         border-radius: 8px;
         box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        max-width: 80%; /* Limit maximum width */
+        overflow-wrap: break-word; /* Allow long text to wrap */
+        text-align: center; /* Center align text */
     }
 </style>
 </head>
