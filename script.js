@@ -1,5 +1,5 @@
 // Fetch compliments from the text file
-fetch('compliments.txt')
+fetch('compliments.toml')
     .then(response => response.text())
     .then(data => {
         const compliments = data.split('\n');
